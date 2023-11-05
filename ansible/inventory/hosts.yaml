@@ -1,0 +1,8 @@
+---
+kubernetes:
+  children:
+    master:
+      hosts:
+        homelab-76:
+          ansible_user: jlehman9
+          ansible_host: 10.0.0.76

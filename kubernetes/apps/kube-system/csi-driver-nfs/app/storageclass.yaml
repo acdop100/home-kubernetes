@@ -1,0 +1,12 @@
+---
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: truenas
+provisioner: nfs.csi.k8s.io
+parameters:
+  server: 10.0.0.164
+  share: /mnt/Media
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+mountOptions: ["hard", "noatime"]
